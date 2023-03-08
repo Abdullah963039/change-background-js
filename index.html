@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hex Color Generator</title>
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      button {
+        margin: auto;
+        display: block;
+        padding: 0.8rem 2rem;
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        outline: none;
+        border: 1px solid;
+        color: #222;
+        background: #fff;
+        cursor: pointer;
+        user-select: none;
+      }
+      #hex-color {
+        user-select: all;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Change <span id="hex-color">#ffffff</span></button>
+    <script src="./script.js"></script>
+  </body>
+</html>
