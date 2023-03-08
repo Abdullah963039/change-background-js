@@ -5,33 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hex Color Generator</title>
-    <style>
-      body {
-        display: grid;
-        place-items: center;
-        height: 100vh;
-      }
-      button {
-        margin: auto;
-        display: block;
-        padding: 0.8rem 2rem;
-        font-size: 1.2rem;
-        outline: none;
-        border: 1px solid;
-        color: #222;
-        background: #fff;
-        cursor: pointer;
-        margin-bottom: 2rem;
-      }
-      #hex-color {
-        font-weight: 900;
-        font-size: 2rem;
-        text-transform: uppercase;
-      }
-    </style>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div><button>Change</button> <span id="hex-color">#ffffff</span></div>
-    <script src="./script.js"></script>
+    <div>
+      <div class="btns">
+        <button class="btn" data-type="static">Static</button>
+        <button class="btn" data-type="gradient">Gradient</button>
+      </div>
+      <p id="hex-color">#ffffff</p>
+    </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
